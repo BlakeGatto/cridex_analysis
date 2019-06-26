@@ -1,0 +1,41 @@
+Process: reader_sl.exe Pid: 1640 Address: 0x3d0000
+Vad Tag: VadS Protection: PAGE_EXECUTE_READWRITE
+Flags: CommitCharge: 33, MemCommit: 1, PrivateMemory: 1, Protection: 6
+
+0x003d0000  4d 5a 90 00 03 00 00 00 04 00 00 00 ff ff 00 00   MZ..............
+0x003d0010  b8 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00   ........@.......
+0x003d0020  00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
+0x003d0030  00 00 00 00 00 00 00 00 00 00 00 00 e0 00 00 00   ................
+
+0x003d0000 4d               DEC EBP
+0x003d0001 5a               POP EDX
+0x003d0002 90               NOP
+0x003d0003 0003             ADD [EBX], AL
+0x003d0005 0000             ADD [EAX], AL
+0x003d0007 000400           ADD [EAX+EAX], AL
+0x003d000a 0000             ADD [EAX], AL
+0x003d000c ff               DB 0xff
+0x003d000d ff00             INC DWORD [EAX]
+0x003d000f 00b800000000     ADD [EAX+0x0], BH
+0x003d0015 0000             ADD [EAX], AL
+0x003d0017 004000           ADD [EAX+0x0], AL
+0x003d001a 0000             ADD [EAX], AL
+0x003d001c 0000             ADD [EAX], AL
+0x003d001e 0000             ADD [EAX], AL
+0x003d0020 0000             ADD [EAX], AL
+0x003d0022 0000             ADD [EAX], AL
+0x003d0024 0000             ADD [EAX], AL
+0x003d0026 0000             ADD [EAX], AL
+0x003d0028 0000             ADD [EAX], AL
+0x003d002a 0000             ADD [EAX], AL
+0x003d002c 0000             ADD [EAX], AL
+0x003d002e 0000             ADD [EAX], AL
+0x003d0030 0000             ADD [EAX], AL
+0x003d0032 0000             ADD [EAX], AL
+0x003d0034 0000             ADD [EAX], AL
+0x003d0036 0000             ADD [EAX], AL
+0x003d0038 0000             ADD [EAX], AL
+0x003d003a 0000             ADD [EAX], AL
+0x003d003c e000             LOOPNZ 0x3d003e
+0x003d003e 0000             ADD [EAX], AL
+
